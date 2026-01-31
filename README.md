@@ -1,6 +1,6 @@
-# ABC Institute
+# 7s-iq-website
 
-A small Node/Express project for ABC Institute.
+A small Node/Express project (ABC Institute) used for the 7s-iq-website repository.
 
 ## Run locally
 
@@ -10,3 +10,4 @@ A small Node/Express project for ABC Institute.
 ## Notes
 - Data files are in `data/`
 - Public site files are in `public/`
+
