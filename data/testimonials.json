@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Rahul Sharma",
+        "role": "Software Engineer at Google",
+        "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150",
+        "text": "The Full Stack course at ABC Institute was a turning point for my career. The hands-on projects and the guidance from faculty helped me clear my Google interview with confidence. The industry-relevant curriculum is exactly what you need in today's market."
+    },
+    {
+        "id": 2,
+        "name": "Priya Patel",
+        "role": "Data Scientist at Amazon",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150",
+        "text": "ABC Institute's Data Science program is intensive and comprehensive. I learned everything from statistics to deep learning. The placement team is exceptional and helped me land a job at Amazon even before I finished the course."
+    },
+    {
+        "id": 3,
+        "name": "Amit Chen",
+        "role": "Full Stack Dev at Microsoft",
+        "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150",
+        "text": "Highly practical approach! We didn't just learn theory; we built production-ready apps. The group projects taught me how to work in an agile team, which is vital in my current role at Microsoft."
+    },
+    {
+        "id": 4,
+        "name": "Sneha Reddy",
+        "role": "UX Designer at Adobe",
+        "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150",
+        "text": "Even though I was from a non-tech background, the instructors made everything easy to understand. The creative environment at ABC Institute is fantastic. I'm now happily working at Adobe!"
+    },
+    {
+        "id": 5,
+        "name": "Vikram Singh",
+        "role": "Java Developer at TCS",
+        "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150",
+        "text": "The focus on core concepts in Java and Spring Boot was what I needed. The mock interviews were very realistic and reduced my anxiety during actual placements."
+    },
+    {
+        "id": 6,
+        "name": "Ananya Gupta",
+        "role": "Marketing Manager",
+        "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150",
+        "text": "Digital Marketing course exceeded my expectations. I learned SEO and social media strategies that I'm now implementing for my own startup. Best ROI!"
+    },
+    {
+        "id": 7,
+        "name": "John Doe",
+        "role": "Python Developer",
+        "imageUrl": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=150&h=150",
+        "text": "I joined the Only Python course to sharpen my scripting skills. The advanced modules on multithreading were top-notch. Highly recommended for experienced devs."
+    },
+    {
+        "id": 8,
+        "name": "Sarah Miller",
+        "role": "AI Researcher",
+        "imageUrl": "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=150&h=150",
+        "text": "The ML/DL course is a goldmine for anyone looking to enter AI. The deep learning projects using TensorFlow were particularly challenging and rewarding."
+    }
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission & Vision - 7S Institute</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="bg-dark text-white py-5 text-center">
+        <h1 class="fw-bold">Mission & Vision</h1>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 order-md-2">
+                <img id="mission-image" src="" class="img-fluid rounded shadow" alt="Mission">
+            </div>
+            <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center">
+                <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-bullseye fs-1 text-primary-green me-3"></i>
+                        <h2 class="fw-bold mb-0" id="mission-title">Our Mission</h2>
+                    </div>
+                    <p class="lead" id="mission-content">Loading...</p>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-eye fs-1 text-primary-green me-3"></i>
+                        <h2 class="fw-bold mb-0" id="vision-title">Our Vision</h2>
+                    </div>
+                    <p class="lead" id="vision-content">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const general = await fetchData('general');
+            if (general) {
+                if (general.mission) {
+                    document.getElementById('mission-title').textContent = general.mission.title;
+                    document.getElementById('mission-content').textContent = general.mission.content;
+                    const mImg = document.getElementById('mission-image');
+                    if (mImg) mImg.src = general.mission.image || 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=800';
+                }
+                if (general.vision) {
+                    document.getElementById('vision-title').textContent = general.vision.title;
+                    document.getElementById('vision-content').textContent = general.vision.content;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

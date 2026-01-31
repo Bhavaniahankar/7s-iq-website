@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - 7S Institute</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("hrrAhLqg-Wn6aY4k3");
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <!-- Course Header -->
+    <div class="bg-dark text-white py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="courses.html"
+                            class="text-white-50 text-decoration-none">Courses</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page" id="breadcrumb-course-name">Course
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="fw-bold mt-3" id="course-title">Loading...</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <img id="course-image" src="" class="img-fluid rounded mb-4 w-100"
+                    style="max-height: 400px; object-fit: cover;" alt="Course Image">
+
+                <h3 class="fw-bold text-primary-green mb-3">Description</h3>
+                <p class="lead mb-5" id="course-description"></p>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <div class="bg-light p-4 rounded h-100 border-start border-5 border-success">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Advantages</h4>
+                            <ul class="list-unstyled" id="course-advantages"></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <div class="bg-light p-4 rounded h-100 border-start border-5 border-info">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-check-circle-fill text-info me-2"></i>Benefits</h4>
+                            <ul class="list-unstyled" id="course-benefits"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fw-bold text-primary-green mb-3">Curriculum</h3>
+                <div class="card mb-5 border-0 shadow-sm">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush list-group-numbered" id="course-curriculum"></ul>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center bg-light p-4 rounded mb-5">
+                    <div>
+                        <h4 class="fw-bold mb-0">Course Fees</h4>
+                        <p class="text-muted small mb-0">Inclusive of all taxes</p>
+                    </div>
+                    <div>
+                        <h2 class="text-primary-green fw-bold mb-0" id="course-fees"></h2>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-5">
+                    <button class="btn btn-primary-green btn-lg px-5 rounded-pill"
+                        onclick="openEnquiryModal('enrollment')">
+                        <i class="bi bi-cart-plus me-2"></i> Enroll Now
+                    </button>
+                    <button class="btn btn-outline-success btn-lg px-4 rounded-pill ms-md-3"
+                        onclick="openEnquiryModal('enquiry')">
+                        <i class="bi bi-question-circle me-2"></i> Enquiry
+                    </button>
+                    <a href="courses.html" class="btn btn-outline-dark btn-lg px-4 rounded-pill ms-md-3">Back to
+                        Courses</a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card sticky-top" style="top: 100px; z-index: 1;">
+                    <div class="card-body p-4 text-center">
+                        <h4 class="fw-bold mb-3">Download Syllabus</h4>
+                        <p class="text-muted mb-4">Get the full course curriculum and brochure directly in your email.
+                        </p>
+                        <button class="btn btn-dark w-100 rounded-pill py-3"
+                            onclick="openEnquiryModal('enquiry')">Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary-green text-white">
+                    <h5 class="modal-title" id="modal-type-title">Course Enquiry</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="enquiry-form-new">
+                        <input type="hidden" name="course_name" id="modal-course-name-field">
+                        <input type="hidden" name="event_name" value="">
+                        <input type="hidden" id="modal-req-type">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="user_name" id="enq-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" name="user_email" id="enq-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" name="user_phone" id="enq-phone" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark rounded-pill">Submit Request</button>
+                        </div>
+                        <div id="enq-message" class="mt-3 text-center"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        let currentCourse = null;
+        const enqModal = new bootstrap.Modal(document.getElementById('enquiryModal'));
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('id');
+
+            if (!courseId) {
+                window.location.href = 'courses.html';
+                return;
+            }
+
+            const courses = await fetchData('courses');
+            currentCourse = courses.find(c => c.id == courseId);
+
+            if (!currentCourse) {
+                document.querySelector('.container.py-5').innerHTML = '<h2 class="text-center">Course not found</h2>';
+                return;
+            }
+
+            // Fill Data
+            document.title = `${currentCourse.title} - 7S Institute`;
+            document.getElementById('breadcrumb-course-name').textContent = currentCourse.title;
+
+            const heroUrl = currentCourse.heroImage || currentCourse.imageUrl;
+            document.querySelector('.bg-dark').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${heroUrl}')`;
+            document.querySelector('.bg-dark').style.backgroundSize = 'cover';
+            document.querySelector('.bg-dark').style.backgroundPosition = 'center';
+
+            document.getElementById('course-title').textContent = currentCourse.title;
+            document.getElementById('course-image').src = currentCourse.imageUrl; // Fixed to imageUrl
+            document.getElementById('course-description').textContent = currentCourse.description;
+            // Advantages
+            document.getElementById('course-advantages').innerHTML = (currentCourse.advantages || []).map(adv => `<li><i class="bi bi-check2 text-success me-2"></i>${adv}</li>`).join('');
+            // Benefits
+            document.getElementById('course-benefits').innerHTML = (currentCourse.benefits || []).map(ben => `<li><i class="bi bi-check2 text-info me-2"></i>${ben}</li>`).join('');
+            // Curriculum
+            document.getElementById('course-curriculum').innerHTML = (currentCourse.curriculum || []).map(item => `<li class="list-group-item bg-transparent text-dark">${item}</li>`).join('');
+            // Fees
+            document.getElementById('course-fees').textContent = currentCourse.fees;
+
+            document.getElementById('modal-course-name-field').value = currentCourse.title;
+        });
+
+        function openEnquiryModal(type) {
+            document.getElementById('modal-req-type').value = type;
+            document.getElementById('modal-type-title').textContent = type === 'enrollment' ? 'Course Enrollment' : 'Course Enquiry';
+            document.getElementById('enq-message').innerHTML = '';
+            enqModal.show();
+        }
+
+        document.getElementById('enquiry-form-new').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const type = document.getElementById('modal-req-type').value;
+            const msgEl = document.getElementById('enq-message');
+
+            const formData = new FormData(e.target);
+            const userData = Object.fromEntries(formData.entries());
+
+            // Prepare course details with multiline formatting for Arrays
+            const courseDetails = {
+                course_name: currentCourse.title,
+                course_duration: currentCourse.duration || '6 Months',
+                course_mode: currentCourse.mode || 'Online/Offline',
+                course_fees: currentCourse.fees || 'Contact for Details',
+                course_advantages: (currentCourse.advantages || []).join('\n • '),
+                course_benefits: (currentCourse.benefits || []).join('\n • '),
+                course_curriculum: (currentCourse.curriculum || []).join('\n • '),
+                event_name: '' // Empty for course requests
+            };
+
+            const templateParams = {
+                user_name: userData.user_name,
+                user_email: userData.user_email,
+                user_phone: userData.user_phone,
+                ...courseDetails
+            };
+
+            console.log("Sending Email Data:", templateParams);
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Using .send() to pass custom formatted data
+                const response = await emailjs.send('service_gd2zjkt', 'template_9sh679g', templateParams);
+                console.log('EmailJS Success:', response);
+
+                const successMsg = type === 'enrollment'
+                    ? "Thank you for enrolling. We will contact you shortly."
+                    : "Thank you for your enquiry. We will contact you shortly.";
+
+                msgEl.innerHTML = `<div class="alert alert-success">${successMsg}</div>`;
+                e.target.reset();
+            } catch (error) {
+                console.error('EmailJS Error:', error);
+                msgEl.innerHTML = `<div class="alert alert-danger">Failed to send request. Error: ${error.text || 'Unknown Error'}</div>`;
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Request';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "7S Institute",
+  "logo": "images/logo.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&h=1080",
+  "about": {
+    "title": "About 7S Institute",
+    "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&h=600",
+    "content": "7S Institute is a premier technology training hub dedicated to providing industry-standard education in UI/UX Design, Full Stack Development, and AI Research. We focus on hands-on learning and real-world project experience."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=800",
+    "content": "To bridge the gap between education and employment by equipping students with the most in-demand technical skills and professional mindset."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&h=800",
+    "content": "To be recognized globally as a center of excellence for technical education and holistic development, creating leaders who contribute positively to society."
+  },
+  "contact": {
+    "phone": "+91 98765 43210",
+    "email": "admissions@abcinstitute.com",
+    "address": "No: 20, 6th school street, jafferkhanpet, Chennai - 600083",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d77.63997121482193!3d12.971598790855799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a7f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin",
+    "bgImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&h=1080"
+  },
+  "social_links": {
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com",
+    "instagram": "https://instagram.com",
+    "linkedin": "https://linkedin.com"
+  }
+}

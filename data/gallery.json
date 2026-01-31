@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&h=600",
+        "caption": "Interactive Classroom Sessions",
+        "category": "Classroom"
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=600",
+        "caption": "Group Study & Collaboration",
+        "category": "Classroom"
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&h=600",
+        "caption": "State-of-the-Art Computer Labs",
+        "category": "Labs"
+    },
+    {
+        "id": 4,
+        "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&h=600",
+        "caption": "Coding Workshops",
+        "category": "Workshops"
+    },
+    {
+        "id": 5,
+        "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&h=600",
+        "caption": "Tech Talk: Future of AI",
+        "category": "Events"
+    },
+    {
+        "id": 6,
+        "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&h=600",
+        "caption": "Annual Hackathon Winners",
+        "category": "Student Activities"
+    },
+    {
+        "id": 7,
+        "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&h=600",
+        "caption": "Advanced Learning Materials",
+        "category": "Classroom"
+    },
+    {
+        "id": 8,
+        "imageUrl": "https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&w=800&h=600",
+        "caption": "Robotics Lab Session",
+        "category": "Labs"
+    },
+    {
+        "id": 9,
+        "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=800&h=600",
+        "caption": "Guest Lecture Services",
+        "category": "Events"
+    },
+    {
+        "id": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&h=600",
+        "caption": "Career Guidance Seminar",
+        "category": "Workshops"
+    },
+    {
+        "id": 11,
+        "imageUrl": "https://images.unsplash.com/photo-1427504746074-b7089eb02ca6?auto=format&fit=crop&w=800&h=600",
+        "caption": "Campus Recruitment Drive",
+        "category": "Events"
+    },
+    {
+        "id": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&h=600",
+        "caption": "Library & Research Center",
+        "category": "Student Activities"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "eventName": "Tech Symposium 2026",
+        "date": "2026-03-15",
+        "time": "10:00 AM",
+        "location": "Main Auditorium",
+        "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=800&h=400",
+        "description": "Join us for the biggest tech event of the year. Industry leaders from Top MNCs will be sharing insights on the future of technology including AI, Blockchain, and IoT. Networking sessions and lunch included."
+    },
+    {
+        "id": 2,
+        "eventName": "Full Stack Bootcamp",
+        "date": "2026-04-01",
+        "time": "09:00 AM",
+        "location": "Innovation Lab",
+        "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&h=400",
+        "description": "An intensive 3-day coding bootcamp designed for absolute beginners. You will build a complete clone of Netflix using the MERN stack by the end of this workshop. Certification provided."
+    },
+    {
+        "id": 3,
+        "eventName": "Alumni Grand Reunion",
+        "date": "2026-05-20",
+        "time": "06:00 PM",
+        "location": "Institute Lawn & Hall",
+        "imageUrl": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&h=400",
+        "description": "Calling all former students! Connect with your batchmates, share your success stories, and mentor the current batch. Dinner and cultural performances to follow."
+    },
+    {
+        "id": 4,
+        "eventName": "Cyber Security Awareness",
+        "date": "2026-06-10",
+        "time": "11:00 AM",
+        "location": "Seminar Hall B",
+        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&h=400",
+        "description": "Protect yourself in the digital age. Learn about phishing, malware, and safe browsing habits from certified ethical hackers. Open to all students and staff."
+    },
+    {
+        "id": 5,
+        "eventName": "Career Fair 2026",
+        "date": "2026-07-05",
+        "time": "09:00 AM",
+        "location": "Exhibition Grounds",
+        "imageUrl": "https://images.unsplash.com/photo-1559223607-a43c990ed9fc?auto=format&fit=crop&w=800&h=400",
+        "description": "Meet recruiters from over 50 top companies. Bring your resume and get interviewed on the spot. Pre-placement talks will begin one week prior."
+    }
+]

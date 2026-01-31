@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Logs
+*.log
+
+# Runtime
+.env
+
+# Build
+/dist
+
+# Uploads
+uploads/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store

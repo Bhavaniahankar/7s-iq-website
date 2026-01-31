@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7S Institute - Master Your Future</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Dynamic) -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container hero-content text-white">
+            <h1 class="fw-bold display-3">Master Your Future with 7S Institute</h1>
+            <p class="lead">Join the elite rank of tech professionals. Expert-led training in coding, design, and
+                management at 7S Institute.</p>
+            <div class="mt-4">
+                <a href="courses.html" class="btn btn-primary-green btn-lg rounded-pill px-5 me-3">Explore Courses</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-5">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose Us</h2>
+                <div class="bg-primary-green mx-auto mb-3" style="width: 80px; height: 4px; border-radius: 2px;"></div>
+                <p class="text-muted">Over 10 years of excellence in transforming careers</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-laptop feature-icon"></i>
+                        <h4>Practical Learning</h4>
+                        <p class="text-muted">Hands-on experience with real-world projects and modern 1:1 computer ratio
+                            training.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-people feature-icon"></i>
+                        <h4>Expert Faculty</h4>
+                        <p class="text-muted">Learn from certified professionals who bring industrial experience to the
+                            classroom.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-trophy feature-icon"></i>
+                        <h4>Placement Support</h4>
+                        <p class="text-muted">100% placement assistance with top MNCs and regular mock interview
+                            sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="fw-bold mb-0">Popular Courses</h2>
+                <a href="courses.html" class="btn btn-outline-dark rounded-pill">View All</a>
+            </div>
+            <div class="row g-4" id="popular-courses-container">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Student Testimonials</h2>
+            <div class="row g-4" id="testimonials-container">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary-green text-white text-center" id="enquire">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-3">Ready to Start Your Journey?</h2>
+            <p class="lead mb-4">Get in touch with us to know more about our scholarship programs and early bird
+                discounts.</p>
+            <a href="contact.html"
+                class="btn btn-light btn-lg rounded-pill px-5 text-primary-green fw-bold shadow">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // General Settings for Hero Background
+            const general = await fetchData('general');
+            if (general && general.heroImage) {
+                document.querySelector('.hero-section').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('${general.heroImage}')`;
+            }
+
+            // Load Popular Courses (Limit 3)
+            const courses = await fetchData('courses');
+            const coursesContainer = document.getElementById('popular-courses-container');
+
+            if (courses && courses.length > 0) {
+                coursesContainer.innerHTML = courses.slice(0, 3).map(course => `
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
+                            <img src="${course.imageUrl}" class="course-img-top" alt="${course.title}">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">${course.category}</span>
+                                <h5 class="card-title fw-bold">${course.title}</h5>
+                                <p class="card-text text-muted small">${course.description.substring(0, 80)}...</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-primary-green fw-bold">${course.fees || 'Contact for Fees'}</span>
+                                    <a href="course-detail.html?id=${course.id}" class="btn btn-sm btn-outline-dark rounded-pill px-3">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                coursesContainer.innerHTML = '<p class="text-center">No courses found.</p>';
+            }
+
+            // Load Testimonials (Limit 3)
+            const testimonials = await fetchData('testimonials');
+            const testimonialsContainer = document.getElementById('testimonials-container');
+            if (testimonials && testimonials.length > 0) {
+                testimonialsContainer.innerHTML = testimonials.slice(0, 3).map(t => `
+                    <div class="col-md-4">
+                        <div class="testimonial-card h-100 border-0 shadow-sm">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="${t.imageUrl}" class="rounded-circle me-3 flex-shrink-0" width="60" height="60" style="object-fit:cover;" alt="${t.name}">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">${t.name}</h6>
+                                    <small class="text-muted">${t.role}</small>
+                                </div>
+                            </div>
+                            <p class="fst-italic text-muted">"${t.text.substring(0, 120)}..."</p>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+    </script>
+</body>
+
+</html>

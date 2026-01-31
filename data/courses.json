@@ -1,0 +1,270 @@
+[
+    {
+        "id": "web-development",
+        "title": "Full Stack Web Development",
+        "category": "Development",
+        "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1920&h=600",
+        "description": "Become a complete web developer with our intensive Full Stack course. You will master both frontend and backend technologies, enabling you to build robust, scalable, and dynamic web applications from scratch. This course covers everything from the basics of HTML/CSS to advanced server-side programming with Node.js and database management.",
+        "advantages": [
+            "Access to high-paying remote and on-site job opportunities globally.",
+            "Ability to work as a freelance developer or start your own agency.",
+            "Comprehensive understanding of how the web works, from client to server."
+        ],
+        "benefits": [
+            "Industry-recognized certification upon completion.",
+            "Portfolio with 5+ real-world live projects.",
+            "Lifetime access to course materials and community forum.",
+            "Dedicated placement support and mock interview prep."
+        ],
+        "curriculum": [
+            "HTML5, CSS3, Flexbox, Grid & Responsive Design",
+            "JavaScript ES6+, DOM Manipulation, Async JS",
+            "Frontend Frameworks: React.js & Redux Toolkit",
+            "Backend Runtime: Node.js & Express Framework",
+            "Databases: MongoDB (NoSQL) & PostgreSQL (SQL)",
+            "Git, GitHub, Deployment (Vercel/Heroku/AWS)"
+        ],
+        "fees": "₹25,000"
+    },
+    {
+        "id": "python-fst",
+        "title": "Python Full Stack Development",
+        "category": "Development",
+        "imageUrl": "https://images.unsplash.com/photo-1526379095030-418579c4633d?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1920&h=600",
+        "description": "Master Python, the world's most versatile programming language. This Full Stack course takes you from Python basics to building complex web applications using Django and Flask. Perfect for beginners and those looking to switch careers into tech.",
+        "advantages": [
+            "Python is the language of choice for AI, Data Science, and Web Dev.",
+            "Rapid development capabilities allow you to build prototypes quickly.",
+            "Huge community support and extensive libraries."
+        ],
+        "benefits": [
+            "Strong foundation for future transition into Data Science.",
+            "Automate boring tasks with simple Python scripts.",
+            "High demand in enterprise environments."
+        ],
+        "curriculum": [
+            "Core Python: Syntax, Data Structures, OOPs",
+            "Advanced Python: Generators, Decorators",
+            "Web Frameworks: Django & Flask Architecture",
+            "REST API Development with Django REST Framework",
+            "Database Management: SQLite & PostgreSQL",
+            "Front-end Integration with Templates"
+        ],
+        "fees": "₹22,000"
+    },
+    {
+        "id": "java-fst",
+        "title": "Java Enterprise Development",
+        "category": "Development",
+        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1579403124614-197f69d8187b?auto=format&fit=crop&w=1920&h=600",
+        "description": "Java remains the backbone of enterprise software. Our Java Full Stack course equips you with the skills to build secure, large-scale applications. Learn Core Java, J2EE, Spring Boot, and Microservices architecture.",
+        "advantages": [
+            "Standard for large banking and financial systems.",
+            "Platform independence - Write Once, Run Anywhere.",
+            "Highly scalable and secure for enterprise needs."
+        ],
+        "benefits": [
+            "Excellent job stability in MNCs and large corps.",
+            "Strong typing system reduces runtime errors.",
+            "Foundation for Android App Development."
+        ],
+        "curriculum": [
+            "Java Basics: Variables, Loops, Arrays",
+            "Object Oriented Programming (OOP) Deep Dive",
+            "Exception Handling, Collections Framework",
+            "Spring Framework & Spring Boot",
+            "Hibernate ORM & JPA",
+            "Building Microservices"
+        ],
+        "fees": "₹28,000"
+    },
+    {
+        "id": "mern-stack",
+        "title": "MERN Stack Specialist",
+        "category": "Development",
+        "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1920&h=600",
+        "description": "Focus exclusively on JavaScript technologies. MongoDB, Express, React, and Node.js combined create the powerful MERN stack. Ideal for startups and modern tech companies looking for agile developers.",
+        "advantages": [
+            "Use a single language (JavaScript) for entire stack.",
+            "Huge ecosystem of NPM packages.",
+            "High performance with non-blocking I/O."
+        ],
+        "benefits": [
+            "Most popular stack for startups.",
+            "Seamless JSON data flow from DB to UI.",
+            "Active open-source community."
+        ],
+        "curriculum": [
+            "Advanced Javascript & ES6+",
+            "React.js: Hooks, Context API, Router",
+            "Node.js Architecture & Event Loop",
+            "Express.js Middleware & Routing",
+            "MongoDB Aggregations & Modeling",
+            "Authentication with JWT"
+        ],
+        "fees": "₹30,000"
+    },
+    {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Pro",
+        "category": "Marketing",
+        "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1920&h=600",
+        "description": "Learn to market brands and products digitally using SEO, SEM, and social media. Effective for business growth and professional marketing careers.",
+        "advantages": [
+            "In-demand skill",
+            "Freelance opportunities",
+            "Growth potential"
+        ],
+        "benefits": [
+            "Work from anywhere",
+            "MNC opportunities",
+            "Real-world campaigns"
+        ],
+        "curriculum": [
+            "SEO",
+            "Google Ads",
+            "Social Media Marketing",
+            "Content Marketing",
+            "Analytics"
+        ],
+        "fees": "₹15,000"
+    },
+    {
+        "id": "only-python",
+        "title": "Only Python",
+        "category": "Programming",
+        "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1920&h=600",
+        "description": "Comprehensive Python programming course covering core concepts, libraries, and advanced features for specialized backend and automation roles.",
+        "advantages": [
+            "Core coding skills",
+            "Multipurpose utility",
+            "Large community"
+        ],
+        "benefits": [
+            "Career in backend",
+            "Scripting automation",
+            "Data readiness"
+        ],
+        "curriculum": [
+            "Python Syntax",
+            "Loop & Conditions",
+            "Data Structures",
+            "OOPs",
+            "File Handling",
+            "Libraries (NumPy, Pandas)"
+        ],
+        "fees": "₹10,000"
+    },
+    {
+        "id": "only-java",
+        "title": "Only Java",
+        "category": "Programming",
+        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1920&h=600",
+        "description": "Master the Java language. From basic syntax to advanced multithreading and networking. Perfect for academic and professional preparation.",
+        "advantages": [
+            "Enterprise standard",
+            "Strict logic",
+            "Platform independent"
+        ],
+        "benefits": [
+            "MNC hiring",
+            "Android foundation",
+            "High performance"
+        ],
+        "curriculum": [
+            "Core Java",
+            "OOPs Concepts",
+            "Collections",
+            "Multithreading",
+            "Exception Handling",
+            "JDBC"
+        ],
+        "fees": "₹12,000"
+    },
+    {
+        "id": "basic-python",
+        "title": "Basic Python",
+        "category": "Programming",
+        "imageUrl": "https://images.unsplash.com/photo-1624953587687-daf2df7158c2?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1920&h=600",
+        "description": "Introductory course for beginners starting their journey into programming with Python.",
+        "advantages": [
+            "Easy start",
+            "Logic building",
+            "User friendly"
+        ],
+        "benefits": [
+            "Hobby projects",
+            "Future learning base",
+            "Coding confidence"
+        ],
+        "curriculum": [
+            "Syntax Intro",
+            "Variables",
+            "First Program",
+            "Simple Loops",
+            "Basic Functions"
+        ],
+        "fees": "₹6,000"
+    },
+    {
+        "id": "basic-java",
+        "title": "Basic Java",
+        "category": "Programming",
+        "imageUrl": "https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&h=600",
+        "description": "Introductory course for beginners starting their journey into programming with Java.",
+        "advantages": [
+            "Good habits",
+            "Strict syntax",
+            "Academic support"
+        ],
+        "benefits": [
+            "Logic skills",
+            "Foundation",
+            "Problem solving"
+        ],
+        "curriculum": [
+            "Java Setup",
+            "Syntax",
+            "Hello World",
+            "Simple Math",
+            "Conditions"
+        ],
+        "fees": "₹7,000"
+    },
+    {
+        "id": "ml-dl",
+        "title": "ML / DL",
+        "category": "Data Science",
+        "imageUrl": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=600&h=400",
+        "heroImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&h=600",
+        "description": "Artificial Intelligence specialization course covering Machine Learning algorithms and Deep Learning neural networks.",
+        "advantages": [
+            "Future tech",
+            "High salary",
+            "Research potential"
+        ],
+        "benefits": [
+            "AI Expert roles",
+            "Automation",
+            "Predictive modeling"
+        ],
+        "curriculum": [
+            "Stats & Prob",
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Neural Networks",
+            "TensorFlow",
+            "PyTorch"
+        ],
+        "fees": "₹40,000"
+    }
+]
