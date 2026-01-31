@@ -10,4 +10,5 @@ A small Node/Express project (ABC Institute) used for the 7s-iq-website reposito
 ## Notes
 - Data files are in `data/`
 - Public site files are in `public/`
+- Mobile responsive: includes viewport meta tags in each page and responsive rules in `public/css/style.css`.
 
